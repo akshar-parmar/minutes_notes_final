@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File uploaded successfully</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="container">
+		<h1>speech to text of the Uploaded audio is</h1>
+		{% if text %}
+		<p>Converted text: {{ text }}</p>
+		{% endif %}
+	</div>
+	<h1>Success</h1>
+	<p>Here is the summary:</p>
+	<p>{{ summary }}</p>
+</body>
+</html>
